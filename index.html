@@ -1,20 +1,40 @@
 <html>
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+          crossorigin="anonymous"> 
+    <style>
+      #img-div {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+      }
+
+      #image  {
+        width: 500px;
+        max-width: 101%;
+        display: block;
+        height: auto;
+        justify-self: center;
+      }
+
+    </style>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="main">
       <div class="jumbotron px-0" style="background-color:lightgrey; margin-top:40px">
         <div class="container justify-content-center">
-          <h1 class="display-4 text-center">Stephen Hawking</h1>
-          <p class="text-center">
-            <img src="http://www.hawking.org.uk/uploads/1/2/2/1/12210141/swh-1-web.jpg?233" alt="Stephen Hawking" class="rounded img-responsive">
-          </p>
-          <p class="lead text-secondary text-center">8 January 1942 – 14 March 2018</p>
+          <h1 class="display-4 text-center" id="title">Stephen Hawking</h1>
+          <div id="img-div">
+            <img src="http://www.hawking.org.uk/uploads/1/2/2/1/12210141/swh-1-web.jpg?233" 
+            alt="Stephen Hawking" class="rounded img-responsive" id="image" />
+            <p class="lead text-secondary text-center" id="img-caption">
+              8 January 1942 – 14 March 2018</p>
+          </div>
         </div>
       </div>
       
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" id="tribute-info">
         <div class="col">
           <ul>
             <li><strong>1942:</strong> Born on January 8 in Oxford, England, exactly 300 years after the death of astronomer Galileo.</li>
@@ -49,7 +69,7 @@
         <span class="text-muted">
           <small>For more information, please visit: 
             <a href="https://en.wikipedia.org/wiki/Stephen_Hawking" 
-               target="_blank">Wikipedia entry for Stephen Hawking</a>.</small>
+               target="_blank" id="tribute-link">Wikipedia entry for Stephen Hawking</a>.</small>
           <br />
           <small>Data and Image Sources:</small>
         
